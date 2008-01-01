@@ -22,6 +22,7 @@ end
 class Mamifero
 	include Caminar
 	include Nadar
+end
 
 class Hombre < Mamifero
 	def hablar
@@ -49,9 +50,10 @@ end
 
 class Aves
 	include Caminar
+end
 
 class Aguila < Aves
-		include Volar
+	include Volar
 end
 
 class Pinguino < Aves
@@ -95,6 +97,10 @@ end
 
 class Sapo < Anfibios
 	include Nadar
+
+	def saltar
+		puts "salto"
+	end
 end
 
 
